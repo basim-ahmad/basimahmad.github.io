@@ -18,7 +18,7 @@ A modern, responsive, and interactive 3D portfolio website built with HTML5, CSS
 
 ## 🚀 Live Demo
 
-Visit the live portfolio at: `https://basimahmad.github.io`
+Visit the live portfolio at: `https://basim-ahmad.github.io`
 
 ## 🛠️ Technologies Used
 
