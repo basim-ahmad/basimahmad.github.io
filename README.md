@@ -18,7 +18,7 @@ A modern, responsive, and interactive 3D portfolio website built with HTML5, CSS
 
 ## 🚀 Live Demo
 
-Visit the live portfolio at: `https://[your-username].github.io/[repository-name]/`
+Visit the live portfolio at: `https://basimahmad.github.io`
 
 ## 🛠️ Technologies Used
 
@@ -53,8 +53,8 @@ Visit the live portfolio at: `https://[your-username].github.io/[repository-name
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/[repository-name].git
-cd [repository-name]
+git clone https://github.com/basim-ahmad/basimahmad.github.io.git
+cd basimahmad.github.io/
 ```
 
 2. Open `index.html` in your browser or use a local server:

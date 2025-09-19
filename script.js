@@ -210,7 +210,7 @@ class ScrollAnimations {
     }
 
     init() {
-        // Create intersection observer
+         // Create intersection observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -219,6 +219,11 @@ class ScrollAnimations {
                     // Animate skill bars
                     if (entry.target.classList.contains('skills')) {
                         this.animateSkillBars();
+                    }
+
+                    // Animate counters in about section
+                    if (entry.target.classList.contains('about')) {
+                        this.animateCounters();
                     }
                 }
             });
@@ -285,6 +290,43 @@ class ScrollAnimations {
             }, 500);
         });
     }
+
+    animateCounters() {
+        const counters = document.querySelectorAll('.stat-number[data-target]');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000; // 2 seconds
+            const increment = target / (duration / 16); // 60fps
+            let current = 0;
+
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    if (current > target) current = target;
+                    // Add % for satisfaction, + for others except internships
+                    let suffix = '';
+                    if (target === 97) {
+                        suffix = '%';
+                    } else if (target > 2) {
+                        suffix = '+';
+                    }
+                    counter.textContent = Math.floor(current) + suffix;
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    // Add % for satisfaction, + for others except internships
+                    let suffix = '';
+                    if (target === 97) {
+                        suffix = '%';
+                    } else if (target > 2) {
+                        suffix = '+';
+                    }
+                    counter.textContent = target + suffix;
+                }
+            };
+
+            setTimeout(updateCounter, 500);
+        });
+    }
 }
 
 // Contact form functionality
@@ -301,29 +343,28 @@ class ContactForm {
     }
 
     handleSubmit(e) {
-        e.preventDefault();
+        // Let the form submit naturally to Formspree, but show a loading state
+        const submitButton = this.form.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
         
-        const formData = new FormData(this.form);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-
-        // Create mailto link
-        const subject = `Portfolio Contact from ${name}`;
-        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-        const mailtoLink = `mailto:basimahmed969@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
         
-        // Open email client
-        window.location.href = mailtoLink;
+        // Show sending message
+        this.showMessage('Sending your message...', 'info');
         
-        // Show success message
-        this.showMessage('Thank you for your message! Your email client should open now.', 'success');
-        
-        // Reset form
-        this.form.reset();
+        // Re-enable button after a delay (in case of errors)
+        setTimeout(() => {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        }, 5000);
     }
 
     showMessage(text, type) {
+        // Remove any existing messages
+        const existingMessages = this.form.querySelectorAll('.form-message');
+        existingMessages.forEach(msg => msg.remove());
+        
         const messageDiv = document.createElement('div');
         messageDiv.className = `form-message ${type}`;
         messageDiv.textContent = text;
@@ -331,9 +372,15 @@ class ContactForm {
             padding: 1rem;
             margin-top: 1rem;
             border-radius: 10px;
-            background: ${type === 'success' ? 'rgba(0, 245, 255, 0.2)' : 'rgba(255, 0, 128, 0.2)'};
-            color: ${type === 'success' ? '#00f5ff' : '#ff0080'};
-            border: 1px solid ${type === 'success' ? 'rgba(0, 245, 255, 0.3)' : 'rgba(255, 0, 128, 0.3)'};
+            background: ${type === 'success' ? 'rgba(0, 245, 255, 0.2)' : 
+                        type === 'error' ? 'rgba(255, 0, 128, 0.2)' : 
+                        'rgba(255, 165, 0, 0.2)'};
+            color: ${type === 'success' ? '#00f5ff' : 
+                    type === 'error' ? '#ff0080' : 
+                    '#ffa500'};
+            border: 1px solid ${type === 'success' ? 'rgba(0, 245, 255, 0.3)' : 
+                               type === 'error' ? 'rgba(255, 0, 128, 0.3)' : 
+                               'rgba(255, 165, 0, 0.3)'};
         `;
 
         this.form.appendChild(messageDiv);

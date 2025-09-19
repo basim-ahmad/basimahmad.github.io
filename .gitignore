@@ -47,3 +47,11 @@ pids
 # Temporary files
 *.tmp
 *.temp
+
+#Files to ignore
+resume.yml
+PROJECT_SUMMARY.md
+DEPLOYMENT.md
+README.md
+.github/workflows/deploy.yml
+CNAME

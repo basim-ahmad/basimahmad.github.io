@@ -10,7 +10,7 @@
     <meta property="og:title" content="Basim Ahmad - Cybersecurity Portfolio">
     <meta property="og:description" content="Interactive 3D portfolio of a cybersecurity specialist with expertise in ethical hacking, digital forensics, and quantum security.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://[username].github.io/[repo-name]/">
+    <meta property="og:url" content="https://basim-ahmad.github.io/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Basim Ahmad - Cybersecurity Portfolio">
     <meta name="twitter:description" content="Interactive 3D portfolio showcasing cybersecurity expertise and projects.">
@@ -86,6 +86,36 @@
                         <span>Digital Forensics</span>
                     </div>
                 </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-user-secret"></i>
+                        <span>Penetration Testing</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Network Engineering</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-code"></i>
+                        <span>Front-End Development</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-atom"></i>
+                        <span>Quantum Cryptography</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-certificate"></i>
+                        <span>ISO27001</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -104,30 +134,23 @@
                         and uncovering vulnerabilities. My expertise spans from malware analysis to quantum 
                         cryptography, with hands-on experience in penetration testing and digital forensics.
                     </p>
-                    <div class="education">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <div class="education-header">
-                                <h4>BS Cyber Security</h4>
-                                <span class="duration">2021 – 2025</span>
-                            </div>
-                            <p class="institution">National University of Computer and Emerging Sciences (FAST NUCES)</p>
-                            <p class="location">Islamabad, Pakistan</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
-                        <div class="stat-number">3+</div>
+                        <div class="stat-number" data-target="3">0</div>
                         <div class="stat-label">Certifications</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">8+</div>
+                        <div class="stat-number" data-target="8">0</div>
                         <div class="stat-label">Projects</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">2</div>
+                        <div class="stat-number" data-target="2">0</div>
                         <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="97">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
                     </div>
                 </div>
             </div>
@@ -410,10 +433,6 @@
                             <i class="fas fa-envelope"></i>
                             <span>basimahmed969@gmail.com</span>
                         </a>
-                        <a href="tel:+923365125464" class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <span>+92 336 5125464</span>
-                        </a>
                         <a href="https://www.linkedin.com/in/basimahmad" target="_blank" class="contact-method">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn Profile</span>
@@ -421,16 +440,18 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/xjkenyar" method="POST">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                        <input type="hidden" name="_next" value="https://basim-ahmad.github.io/thank-you.html">
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
@@ -445,7 +466,6 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/basimahmad" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:basimahmed969@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+923365125464"><i class="fas fa-phone"></i></a>
             </div>
         </div>
     </footer>
