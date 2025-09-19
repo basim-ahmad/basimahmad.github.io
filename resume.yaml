@@ -1,0 +1,85 @@
+name: Basim Ahmad
+contact:
+  linkedin: https://www.linkedin.com/in/basimahmad
+  phone: "+923365125464"
+  email: basimahmed969@gmail.com
+
+education:
+  - institution: National University of Computer and Emerging Sciences (FAST NUCES)
+    degree: BS Cyber Security
+    location: Islamabad, Pakistan
+    duration: "2021 – 2025"
+
+experience:
+  - role: Intern
+    organization: KDD Lab
+    duration: "June 2024 – Aug 2024"
+    location: Islamabad, Pakistan
+    details:
+      - Conducted Static and Dynamic Malware Analysis on various malwares using IDA, Ghidra and other tools.
+      - Implemented AES-256, RSA, and Trivium Stream Cipher.
+      - Conducted research on BB84, E91, and QSS.
+  - role: Intern
+    organization: Protect Lab
+    duration: "June 2023 – Aug 2023"
+    location: Islamabad, Pakistan
+    details:
+      - Learnt and developed proficiency in tools, techniques and methodologies used for penetration testing and red teaming.
+      - Assessed company security policies, developed risk mitigation strategies, and ensured compliance with ISO 27001 and GDPR standards.
+
+certifications:
+  - name: Ethical Junior Pentester (eJPT)
+    issuer: eLearnSecurity
+    id: 125126585
+    date: "04 Dec 2024"
+    link: "https://certs.ine.com/5a116b40-2ac0-46c6-b94a-d8f399f326ad#acc.Iv2TKXWz"
+  - name: Digital Forensics Essentials (DFE)
+    issuer: EC-Council
+    id: 167699
+    date: "02 Jan 2023"
+    link: "https://codered.eccouncil.org/certificate/47f365cf-df0b-4466-910f-33e8472f6abd?logged=false"
+  - name: Network Security Associate 1,2,3 (NSE)
+    issuer: Fortinet
+    id: jC1Gz5iCJP
+    date: "07 Aug 2022"
+    link: "https://training.fortinet.com/badges/badge.php?hash=c97008ec0998a1fc34becf4b813e518c2326d1d6"
+
+projects:
+  - name: Q-Sec: Quantum-Secure Messaging System
+    tech: [Reactjs, Nodejs, Socket.io, MongoDB]
+    details:
+      - Integrated Quantum Key Distribution (BB84) with AES-256 encryption for secure communication.
+      - Implemented real-time messaging, authentication, and modular RESTful APIs.
+  - name: MAC Address Spoofer & Network Scanner
+    tech: [Python]
+    details:
+      - Built a Python-based spoofer and scanner to test and analyze network security.
+  - name: Port Scanner & Host Discovery Tool
+    tech: [Python]
+    details:
+      - Implemented a port scanner to identify open ports and active hosts using probing techniques.
+  - name: Packet Crafting & Manipulation
+    tech: [Python, Scapy]
+    details:
+      - Developed a packet crafting tool to analyze and modify network traffic.
+  - name: Blackhole Attack Detection in RPL-based IoT Networks
+    tech: [Python, Random Forest, Neural Networks]
+    details:
+      - Built ML pipeline on 5.9M+ packets with engineered features and SMOTE for classification.
+  - name: DePay (Decentralized e-commerce platform)
+    tech: [Solidity, Ethereum, Ganache, OpenZeppelin, Reactjs, Nodejs]
+    details:
+      - Implemented Ethereum smart contracts (ERC-20) for blockchain payments.
+      - Developed a full-stack app with product listings, cart, and secure payment gateway.
+  - name: Key Logger
+    tech: [C++, Terminal Scripts]
+    details:
+      - Created a logger to capture keystrokes and send via email for security testing.
+
+skills:
+  programming: [C++, C#, Python, R, HTML, CSS, JavaScript]
+  cybersecurity_tools: [Kali Linux, Ubuntu, Metasploit, Hydra, theHarvester, Nikto, SQLMap, Hashcat, YARA, Wireshark, Nmap, Burp Suite, Autopsy, FTK Imager, IDA, Maltego]
+  software: [Microsoft Office (Word, Excel, PowerPoint, PowerBI), Stata]
+  database: [SQL]
+  domains: [Digital Forensics, Reverse Engineering, Incident Response, Risk Assessment & Management]
+  research: [Research & Thesis Writing]

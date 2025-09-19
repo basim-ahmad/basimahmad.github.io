@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basim Ahmad - Cybersecurity Portfolio</title>
+    <meta name="description" content="Basim Ahmad - Cybersecurity Specialist, Ethical Hacker, and Digital Forensics Expert. Interactive 3D portfolio showcasing penetration testing, malware analysis, and quantum security projects.">
+    <meta name="keywords" content="cybersecurity, ethical hacking, penetration testing, digital forensics, malware analysis, quantum security, portfolio">
+    <meta name="author" content="Basim Ahmad">
+    <meta property="og:title" content="Basim Ahmad - Cybersecurity Portfolio">
+    <meta property="og:description" content="Interactive 3D portfolio of a cybersecurity specialist with expertise in ethical hacking, digital forensics, and quantum security.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://[username].github.io/[repo-name]/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Basim Ahmad - Cybersecurity Portfolio">
+    <meta name="twitter:description" content="Interactive 3D portfolio showcasing cybersecurity expertise and projects.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" as="script">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Basim Ahmad</span>
+                </h1>
+                <p class="hero-subtitle">Cybersecurity Specialist & Ethical Hacker</p>
+                <p class="hero-description">
+                    Passionate about securing digital landscapes through penetration testing, 
+                    malware analysis, and quantum cryptography research.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security First</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-bug"></i>
+                        <span>Ethical Hacking</span>
+                    </div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-search"></i>
+                        <span>Digital Forensics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Cybersecurity student at FAST NUCES with a passion for protecting digital assets 
+                        and uncovering vulnerabilities. My expertise spans from malware analysis to quantum 
+                        cryptography, with hands-on experience in penetration testing and digital forensics.
+                    </p>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4>BS Cyber Security</h4>
+                                <span class="duration">2021 – 2025</span>
+                            </div>
+                            <p class="institution">National University of Computer and Emerging Sciences (FAST NUCES)</p>
+                            <p class="location">Islamabad, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern - KDD Lab</h3>
+                            <span class="timeline-date">June 2024 – Aug 2024</span>
+                        </div>
+                        <p class="timeline-location">Islamabad, Pakistan</p>
+                        <ul class="timeline-details">
+                            <li>Conducted Static and Dynamic Malware Analysis on various malwares using IDA, Ghidra and other tools</li>
+                            <li>Implemented AES-256, RSA, and Trivium Stream Cipher</li>
+                            <li>Conducted research on BB84, E91, and QSS quantum protocols</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Malware Analysis</span>
+                            <span class="tag">Cryptography</span>
+                            <span class="tag">Quantum Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern - Protect Lab</h3>
+                            <span class="timeline-date">June 2023 – Aug 2023</span>
+                        </div>
+                        <p class="timeline-location">Islamabad, Pakistan</p>
+                        <ul class="timeline-details">
+                            <li>Developed proficiency in penetration testing and red teaming methodologies</li>
+                            <li>Assessed company security policies and developed risk mitigation strategies</li>
+                            <li>Ensured compliance with ISO 27001 and GDPR standards</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">Risk Assessment</span>
+                            <span class="tag">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-tech="Reactjs,Nodejs,Socket.io,MongoDB">
+                    <div class="project-header">
+                        <h3>Q-Sec: Quantum-Secure Messaging</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Integrated Quantum Key Distribution (BB84) with AES-256 encryption for secure communication.
+                        Implemented real-time messaging, authentication, and modular RESTful APIs.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tech="Solidity,Ethereum,Reactjs,Nodejs">
+                    <div class="project-header">
+                        <h3>DePay - Decentralized E-commerce</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Implemented Ethereum smart contracts (ERC-20) for blockchain payments.
+                        Developed a full-stack app with product listings, cart, and secure payment gateway.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Solidity</span>
+                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tech="Python,Machine Learning">
+                    <div class="project-header">
+                        <h3>Blackhole Attack Detection</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Built ML pipeline on 5.9M+ packets with engineered features and SMOTE for classification.
+                        Detected blackhole attacks in RPL-based IoT networks using Random Forest and Neural Networks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">Neural Networks</span>
+                        <span class="tech-tag">IoT Security</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tech="Python">
+                    <div class="project-header">
+                        <h3>Network Security Tools</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Built comprehensive network security toolkit including MAC address spoofer, 
+                        port scanner, host discovery tool, and packet crafting utilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scapy</span>
+                        <span class="tech-tag">Network Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cybersecurity Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Hydra</span>
+                        <span class="skill-tag">SQLMap</span>
+                        <span class="skill-tag">Hashcat</span>
+                        <span class="skill-tag">IDA</span>
+                        <span class="skill-tag">Ghidra</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Domains</h3>
+                    <div class="domain-items">
+                        <div class="domain-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Digital Forensics</span>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Reverse Engineering</span>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Incident Response</span>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Risk Assessment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Ethical Junior Pentester (eJPT)</h3>
+                        <p class="cert-issuer">eLearnSecurity</p>
+                        <p class="cert-date">04 Dec 2024</p>
+                        <p class="cert-id">ID: 125126585</p>
+                        <a href="https://certs.ine.com/5a116b40-2ac0-46c6-b94a-d8f399f326ad#acc.Iv2TKXWz" 
+                           target="_blank" class="cert-link">Verify Certificate</a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Digital Forensics Essentials (DFE)</h3>
+                        <p class="cert-issuer">EC-Council</p>
+                        <p class="cert-date">02 Jan 2023</p>
+                        <p class="cert-id">ID: 167699</p>
+                        <a href="https://codered.eccouncil.org/certificate/47f365cf-df0b-4466-910f-33e8472f6abd?logged=false" 
+                           target="_blank" class="cert-link">Verify Certificate</a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Network Security Associate (NSE 1,2,3)</h3>
+                        <p class="cert-issuer">Fortinet</p>
+                        <p class="cert-date">07 Aug 2022</p>
+                        <p class="cert-id">ID: jC1Gz5iCJP</p>
+                        <a href="https://training.fortinet.com/badges/badge.php?hash=c97008ec0998a1fc34becf4b813e518c2326d1d6" 
+                           target="_blank" class="cert-link">Verify Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Interested in collaborating or discussing cybersecurity? 
+                        I'm always open to new opportunities and connections.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:basimahmed969@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>basimahmed969@gmail.com</span>
+                        </a>
+                        <a href="tel:+923365125464" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+92 336 5125464</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/basimahmad" target="_blank" class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Basim Ahmad. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/basimahmad" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:basimahmed969@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+923365125464"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

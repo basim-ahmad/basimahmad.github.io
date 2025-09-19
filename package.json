@@ -1,0 +1,47 @@
+{
+  "name": "basim-ahmad-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive 3D Portfolio Website for Basim Ahmad - Cybersecurity Specialist",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000",
+    "dev": "npx live-server --port=8000",
+    "build": "echo 'No build process required for static site'",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[username]/[repository-name].git"
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "3d",
+    "interactive",
+    "responsive",
+    "threejs",
+    "web-development",
+    "github-pages"
+  ],
+  "author": {
+    "name": "Basim Ahmad",
+    "email": "basimahmed969@gmail.com",
+    "url": "https://www.linkedin.com/in/basimahmad"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/[username]/[repository-name]/issues"
+  },
+  "homepage": "https://[username].github.io/[repository-name]/",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
