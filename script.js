@@ -303,24 +303,11 @@ class ScrollAnimations {
                 if (current < target) {
                     current += increment;
                     if (current > target) current = target;
-                    // Add % for satisfaction, + for others except internships
-                    let suffix = '';
-                    if (target === 97) {
-                        suffix = '%';
-                    } else if (target > 2) {
-                        suffix = '+';
-                    }
+                    let suffix = '+';
                     counter.textContent = Math.floor(current) + suffix;
                     requestAnimationFrame(updateCounter);
                 } else {
-                    // Add % for satisfaction, + for others except internships
-                    let suffix = '';
-                    if (target === 97) {
-                        suffix = '%';
-                    } else if (target > 2) {
-                        suffix = '+';
-                    }
-                    counter.textContent = target + suffix;
+                    counter.textContent = target + '+';
                 }
             };
 
@@ -685,10 +672,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSubtitle = document.querySelector('.hero-subtitle');
     if (heroSubtitle) {
         new TypingAnimation(heroSubtitle, [
-            'Cybersecurity Specialist & Ethical Hacker',
-            'Penetration Testing Expert',
-            'Digital Forensics Analyst',
-            'Quantum Security Researcher'
+            'Enterprise Security & Network Engineer',
+            'Information Security Governance',
+            'Vulnerability Assessment & Pentesting',
+            'Network Security Operations',
+            'ISO 27001 | NIST CSF Compliance'
         ]);
     }
     
